@@ -1,7 +1,7 @@
 # --------------Beczka Śpiewu-------------
 ## Get all songs
 ```http
-GET /songs
+GET /song
 ```
 ```json
 {
@@ -15,7 +15,7 @@ GET /songs
 ```
 ## Get one song
 ```http
-GET /songs/:id
+GET /song/:id
 ```
 ## Get groups
 ```http
@@ -53,7 +53,7 @@ GET /group/:id
 ```
 ## Get lists
 ```http
-GET /lists
+GET /list
 ```
 ```json
 {
