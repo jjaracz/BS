@@ -5,6 +5,32 @@ GET /song
 ```
 ```json
 {
+  "songs": [
+    {
+      "id": "string",
+      "title": "string",
+      "author": "string",
+      "category": "string",
+      "chords": "string",
+      "creationDate": "string"
+    },
+    {
+      "id": "string",
+      "title": "string",
+      "author": "string",
+      "category": "string",
+      "chords": "string",
+      "creationDate": "string"
+    }
+  ]
+}
+```
+## Get one song
+```http
+GET /song/:id
+```
+```json
+{
   "id": "string",
   "title": "string",
   "author": "string",
@@ -12,10 +38,6 @@ GET /song
   "chords": "string",
   "creationDate": "string"
 }
-```
-## Get one song
-```http
-GET /song/:id
 ```
 ## Get groups
 ```http
@@ -80,7 +102,8 @@ GET /list/:id
 {
   "id": "string",
   "title": "string",
-  "group": "string"
+  "group": "string",
+  "img": "url"
 }
 ```
 ## Add song
@@ -104,8 +127,8 @@ POST /list
 ```json
 {
   "title": "string",
-  "category": "string",
-  "group": "string"
+  "group": "string",
+  "img": "url"
 }
 ```
 ## Add group
@@ -115,7 +138,6 @@ POST /group
 ```json
 {
   "title": "string",
-  "category": "string",
   "img": "url"
 }
 ```
