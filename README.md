@@ -92,9 +92,20 @@ POST /song
 }
 ```
 ```http
-GET /song/?title=string&author=string&category=string&chords=string
+GET /song/add/?title=string&author=string&category=string&chords=string
 ```
 ## Add list
 ```http
-GET /list/?title=string&group=string
+GET /list/add/?title=string&group=string
+```
+## Add group
+```http
+POST /group
+```
+```json
+{
+  "title": "string",
+  "category": "string",
+  "img": "url"
+}
 ```
