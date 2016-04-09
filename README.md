@@ -54,6 +54,7 @@ GET /group/:id
 ## Get lists
 ```http
 GET /list
+GET /list/:group_id
 ```
 ```json
 {
