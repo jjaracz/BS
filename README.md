@@ -116,7 +116,7 @@ POST /song
   "title": "string",
   "author": "string",
   "category": "string",
-  "chords": "string"
+  "chords": "string",
   "list": "id"
 }
 ```
