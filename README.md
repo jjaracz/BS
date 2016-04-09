@@ -12,6 +12,7 @@ GET /song
       "author": "string",
       "category": "string",
       "chords": "string",
+      "content": "string",
       "creationDate": "string"
     },
     {
@@ -20,6 +21,7 @@ GET /song
       "author": "string",
       "category": "string",
       "chords": "string",
+      "content": "string",
       "creationDate": "string"
     }
   ]
@@ -36,6 +38,7 @@ GET /song/:id
   "author": "string",
   "category": "string",
   "chords": "string",
+  "content": "string",
   "creationDate": "string"
 }
 ```
@@ -117,7 +120,8 @@ POST /song
   "author": "string",
   "category": "string",
   "chords": "string",
-  "list": "id"
+  "list": "id",
+  "content": "string"
 }
 ```
 ## Add list
