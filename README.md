@@ -13,7 +13,7 @@ GET /song
       "chords": "string",
       "list_id": "string",
       "content": "string",
-      "chords_img_url": "string"
+      "chords_img_url": "string",
       "creationDate": "string"
     },
     {
@@ -23,7 +23,7 @@ GET /song
       "chords": "string",
       "list_id": "string",
       "content": "string",
-      "chords_img_url": "string"
+      "chords_img_url": "string",
       "creationDate": "string"
     }
   ]
@@ -41,7 +41,7 @@ SONG{
   "chords": "string",
   "list_id": "string",
   "content": "string",
-  "chords_img_url": "string"
+  "chords_img_url": "string",
   "creationDate": "string"
 }
 
@@ -128,7 +128,7 @@ POST /song
   "chords": "string",
   "list_id": "string",
   "content": "string",
-  "chords_img_url": "string"
+  "chords_img_url": "string",
   "creationDate": "string"
 }
 ```
