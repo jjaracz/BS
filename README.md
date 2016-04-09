@@ -84,12 +84,12 @@ GET /list/:group_id
     {
       "id": "string",
       "title": "string",
-      "group": "string"
+      "group": "id"
     },
     {
       "id": "string",
       "title": "string",
-      "group": "string"
+      "group": "id"
     }
   ]
 }
@@ -102,13 +102,13 @@ GET /list/:id
 {
   "id": "string",
   "title": "string",
-  "group": "string",
+  "group": "id",
   "img": "url"
 }
 ```
 ## Add song
 ```http
-GET /song/add/?title=string&author=string&category=string&chords=string
+GET /song/add/?title=string&author=string&category=string&chords=string&list=id
 POST /song
 ```
 ```json
@@ -117,17 +117,18 @@ POST /song
   "author": "string",
   "category": "string",
   "chords": "string"
+  "list": "id"
 }
 ```
 ## Add list
 ```http
-GET /list/add/?title=string&group=string
+GET /list/add/?title=string&group=id&img=url
 POST /list
 ```
 ```json
 {
   "title": "string",
-  "group": "string",
+  "group": "id",
   "img": "url"
 }
 ```
