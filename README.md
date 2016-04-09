@@ -7,21 +7,23 @@ GET /song
 {
   "songs": [
     {
-      "id": "string",
       "title": "string",
       "author": "string",
       "category": "string",
       "chords": "string",
+      "list_id": "string",
       "content": "string",
+      "chords_img_url": "string"
       "creationDate": "string"
     },
     {
-      "id": "string",
       "title": "string",
       "author": "string",
       "category": "string",
       "chords": "string",
+      "list_id": "string",
       "content": "string",
+      "chords_img_url": "string"
       "creationDate": "string"
     }
   ]
@@ -32,15 +34,17 @@ GET /song
 GET /song/:id
 ```
 ```json
-{
-  "id": "string",
+SONG{
   "title": "string",
   "author": "string",
   "category": "string",
   "chords": "string",
+  "list_id": "string",
   "content": "string",
+  "chords_img_url": "string"
   "creationDate": "string"
 }
+
 ```
 ## Get groups
 ```http
@@ -52,13 +56,13 @@ GET /group
     {
       "id": "string",
       "title": "string",
-      "img": "url",
+      "img_url": "string",
       "creationDate": "string"
     },
     {
       "id": "string",
       "title": "string",
-      "img": "url",
+      "img_url": "string",
       "creationDate": "string"
     }
   ]
@@ -72,7 +76,7 @@ GET /group/:id
 {
   "id": "string",
   "title": "string",
-  "img": "url",
+  "img_url": "string",
   "creationDate": "string"
 }
 ```
@@ -86,13 +90,15 @@ GET /list/:group_id
   "lists": [
     {
       "id": "string",
+      "group_id": "string",
       "title": "string",
-      "group": "id"
+      "img_url": "string"
     },
     {
       "id": "string",
+      "group_id": "string",
       "title": "string",
-      "group": "id"
+      "img_url": "string"
     }
   ]
 }
@@ -104,9 +110,9 @@ GET /list/:id
 ```json
 {
   "id": "string",
+  "group_id": "string",
   "title": "string",
-  "group": "id",
-  "img": "url"
+  "img_url": "string"
 }
 ```
 ## Add song
@@ -120,8 +126,10 @@ POST /song
   "author": "string",
   "category": "string",
   "chords": "string",
-  "list": "id",
-  "content": "string"
+  "list_id": "string",
+  "content": "string",
+  "chords_img_url": "string"
+  "creationDate": "string"
 }
 ```
 ## Add list
@@ -131,9 +139,10 @@ POST /list
 ```
 ```json
 {
+  "id": "string",
+  "group_id": "string",
   "title": "string",
-  "group": "id",
-  "img": "url"
+  "img_url": "string"
 }
 ```
 ## Add group
@@ -142,7 +151,9 @@ POST /group
 ```
 ```json
 {
+  "id": "string",
   "title": "string",
-  "img": "url"
+  "img_url": "string",
+  "creationDate": "string"
 }
 ```
