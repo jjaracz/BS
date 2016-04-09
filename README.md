@@ -83,7 +83,7 @@ GET /group/:id
 ## Get lists
 ```http
 GET /list
-GET /list/:group_id
+GET /list/group/:group_id
 ```
 ```json
 {
