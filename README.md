@@ -6,6 +6,7 @@ GET /song
 ```json
 {
   "songs": [
+  "len": string"
     {
       "title": "string",
       "author": "string",
@@ -53,6 +54,7 @@ GET /group
 ```json
 {
   "groups": [
+  "len": "string"
     {
       "id": "string",
       "title": "string",
@@ -87,7 +89,8 @@ GET /list/group/:group_id
 ```
 ```json
 {
-  "lists": [
+  "lists":[
+    "len": "string"
     {
       "id": "string",
       "group_id": "string",
