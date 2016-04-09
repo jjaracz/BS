@@ -97,6 +97,14 @@ GET /song/add/?title=string&author=string&category=string&chords=string
 ## Add list
 ```http
 GET /list/add/?title=string&group=string
+POST /list
+```
+```json
+{
+  "title": "string",
+  "category": "string",
+  "group": "string"
+}
 ```
 ## Add group
 ```http
