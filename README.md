@@ -25,12 +25,12 @@ GET /group
   "groups": [
     {
       "title": "string",
-      "img": "string",
+      "img": "url",
       "creationDate": "string"
     },
     {
       "title": "string",
-      "img": "string",
+      "img": "url",
       "creationDate": "string"
     }
   ]
@@ -44,7 +44,7 @@ GET /group/:id
 {
   "id": "string",
   "title": "string",
-  "img": "string",
+  "img": "url",
   "creationDate": "string"
 }
 ```
@@ -95,11 +95,6 @@ POST /song
 GET /song/?title=string&author=string&category=string&chords=string
 ```
 ## Add list
-    {
-      "id": "string",
-      "title": "string",
-      "group": "string"
-    }
 ```http
 GET /list/?title=string&group=string
 ```
