@@ -95,13 +95,51 @@ GET /list/group/:group_id
       "id": "string",
       "group_id": "string",
       "title": "string",
-      "img_url": "string"
+      "img_url": "string",
+      "songs": [
+        {
+          "title": "string",
+          "author": "string",
+          "category": "string",
+          "chords": "string",
+          "list_id": "string",
+          "content": "string",
+          "chords_img_url": "string"
+        },
+        {
+          "title": "string",
+          "author": "string",
+          "category": "string",
+          "chords": "string",
+          "list_id": "string",
+          "content": "string",
+          "chords_img_url": "string"
+        }]
     },
     {
       "id": "string",
       "group_id": "string",
       "title": "string",
-      "img_url": "string"
+      "img_url": "string",
+      "songs": [
+        {
+          "title": "string",
+          "author": "string",
+          "category": "string",
+          "chords": "string",
+          "list_id": "string",
+          "content": "string",
+          "chords_img_url": "string"
+        },
+        {
+          "title": "string",
+          "author": "string",
+          "category": "string",
+          "chords": "string",
+          "list_id": "string",
+          "content": "string",
+          "chords_img_url": "string"
+        }]
     }
   ]
 }
@@ -115,7 +153,26 @@ GET /list/:id
   "id": "string",
   "group_id": "string",
   "title": "string",
-  "img_url": "string"
+  "img_url": "string",
+  "songs": [
+    {
+      "title": "string",
+      "author": "string",
+      "category": "string",
+      "chords": "string",
+      "list_id": "string",
+      "content": "string",
+      "chords_img_url": "string"
+    },
+    {
+      "title": "string",
+      "author": "string",
+      "category": "string",
+      "chords": "string",
+      "list_id": "string",
+      "content": "string",
+      "chords_img_url": "string"
+    }]
 }
 ```
 ## Add song
