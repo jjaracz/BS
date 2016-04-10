@@ -5,8 +5,8 @@ GET /song
 ```
 ```json
 {
+  "len": 2,
   "songs": [
-  "len": string"
     {
       "title": "string",
       "author": "string",
@@ -35,7 +35,7 @@ GET /song
 GET /song/:id
 ```
 ```json
-SONG{
+{
   "title": "string",
   "author": "string",
   "category": "string",
@@ -53,8 +53,8 @@ GET /group
 ```
 ```json
 {
+  "len": 2,
   "groups": [
-  "len": "string"
     {
       "id": "string",
       "title": "string",
@@ -89,8 +89,8 @@ GET /list/group/:group_id
 ```
 ```json
 {
+  "len": 2,
   "lists":[
-    "len": "string"
     {
       "id": "string",
       "group_id": "string",
@@ -120,7 +120,7 @@ GET /list/:id
 ```
 ## Add song
 ```http
-GET /song/add/?title=string&author=string&category=string&chords=string&list=id
+GET /song/add/?title=string&author=string&category=string&chords=string&list_id=string&chords_img_url=string&content=string
 POST /song
 ```
 ```json
@@ -131,18 +131,16 @@ POST /song
   "chords": "string",
   "list_id": "string",
   "content": "string",
-  "chords_img_url": "string",
-  "creationDate": "string"
+  "chords_img_url": "string"
 }
 ```
 ## Add list
 ```http
-GET /list/add/?title=string&group=id&img=url
+GET /list/add/?title=string&group_id=string&img_url=string
 POST /list
 ```
 ```json
 {
-  "id": "string",
   "group_id": "string",
   "title": "string",
   "img_url": "string"
@@ -154,9 +152,7 @@ POST /group
 ```
 ```json
 {
-  "id": "string",
   "title": "string",
-  "img_url": "string",
-  "creationDate": "string"
+  "img_url": "string"
 }
 ```
