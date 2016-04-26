@@ -74,11 +74,7 @@ module.exports.HTTPManager = function(config, routes){
         });
         req.on('end', function(){
           try{
-            this.parseForm(req, res, function(fields, files){
-              controller.POST.fields = fields;
-              controller.POST.files = files;
-              callback(controller);
-            });
+            controller.POST = query.parse(item);
           }catch(e){
             console.log("Couldn't set POST to the Controller");
           }
@@ -113,7 +109,7 @@ module.exports.HTTPManager = function(config, routes){
       if(typeof route.View != 'undefined'){
         View = route.View + "." + __config.template;
       }else{
-        View = "index" + "." + __config.template;
+        View = "index." + __config.template;
       }
       __pathFile = path.join(__root+"/app/controllers/", Controller + "Controller.js");
       try {
